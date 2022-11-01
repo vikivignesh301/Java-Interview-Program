@@ -23,33 +23,19 @@ public class PrimeNumber {
 		}
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	private static void for1To100Number() {
 
-		for (int i = 2; i <= 100; i++) {
-			int count = 0;
-			for (int j = 2; j <= i / 2; j++) {
-				if (i % j == 0) {
-
-					count++;
+		for (int n = 2; n <= 100; n++) {
+			boolean flag = true;
+			for (int j = 2; j < n; j++) {
+				if (n % j == 0) {
+					flag = false;
 				}
 			}
-			if (count == 0) {
-				System.out.println("It is a Prime Number :" + i);
-			} else {
-				System.out.println("It is Not A Prime Number :" + i);
+			if (flag == true) {
+				System.out.println(n + " is a Prime Number");
 			}
-
 		}
-
 	}
 
 	public static void main(String[] args) {

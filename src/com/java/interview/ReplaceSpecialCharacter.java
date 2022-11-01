@@ -4,9 +4,9 @@ public class ReplaceSpecialCharacter {
 
 	
 	private static void subMethod() {
-		String s = "This&String@Contains*Special^Characters%";
-		String r = s.replaceAll("[^a-zA-Z0-9]", " ");
-		System.out.println(r);
+		String s = "For#The@People(By^The&People%of€The)People";
+		String replace = s.replaceAll("[^a-zA-Z0-9]", " ");
+		System.out.println(replace);
 	}
 	public static void main(String[] args) {
 		subMethod();

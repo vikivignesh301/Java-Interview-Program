@@ -20,18 +20,6 @@ public class StringFunctions4 {
 		System.out.println("the length of the string : " + c);
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	private static void subMethod2() {
 
 		System.out.println("check the string rotation");
@@ -41,9 +29,7 @@ public class StringFunctions4 {
 		String s2 = "cdab";
 		
 		String s3 = s1+s1;
-		if (s1.length()!=s2.length()) {
-			System.out.println("s2 is not the rotation of s1");
-		}
+		
 		if (s3.indexOf(s2)>=0) {
 			System.out.println("s2 is the rotation of s1");
 		} else {

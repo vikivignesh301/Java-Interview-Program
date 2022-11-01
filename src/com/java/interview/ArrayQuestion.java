@@ -16,12 +16,11 @@ public class ArrayQuestion {
 	private static void subMethod1() {
 		System.out.println("find the third largest in an array");
 		Integer a[] = {1,8,5,6,3,2};
-		 List<Integer> l = Arrays.asList(a);
-		 System.out.println(l);
-		 Collections.sort(l);
-		 System.out.println(l);
-		 System.out.println(l.get(2));
-		 
+		 List<Integer> list = Arrays.asList(a);
+		 System.out.println(list);
+		 Collections.sort(list);
+		 System.out.println(list);
+		 System.out.println(list.get(2));
 	}
 	public static void main(String[] args) {
 		subMethod();
